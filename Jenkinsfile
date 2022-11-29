@@ -39,7 +39,7 @@ pipeline {
 
         stage("deploy"){
             steps{
-                sh "ansible-playbook -i myhosts webserver.yml"
+                sh "ansible-playbook -i myhosts java.yml"
             }
         }
         
