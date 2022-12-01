@@ -40,6 +40,7 @@ pipeline {
             catch(err) {
                 printIn "ünable to push the artifact"
                 printIn err.getMessage()
+            }
         }
 
         stage("deploy"){
