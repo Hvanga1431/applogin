@@ -20,7 +20,7 @@ pipeline {
             }
         }
         
-        try {
+      /*  try {
             
         stage("publish"){
 
@@ -41,7 +41,7 @@ pipeline {
             catch (err) {
                 printIn "unable to push the artifact"
                 printIn err.getMessage()
-            }
+            } */
         }
 
         stage("deploy"){
