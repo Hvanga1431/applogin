@@ -19,7 +19,9 @@ pipeline {
                 echo "this is for testing"
             }
         }
-
+        
+        try {
+            
         stage("publish"){
 
             steps{
@@ -35,6 +37,9 @@ pipeline {
                     }''',
                 )
             }
+            catch(err) {
+                printIn "ünable to push the artifact"
+                printIn err.getMessage()
         }
 
         stage("deploy"){
