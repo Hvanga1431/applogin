@@ -20,9 +20,8 @@ pipeline {
             }
         }
         
-      
-        {    
-       /*   stage("publish"){
+                
+   /*   stage("publish"){
             steps{
                 rtUpload (
                     serverId: "myjfrog",
@@ -38,7 +37,7 @@ pipeline {
              }
             }
             */
-        }
+        
 
         stage("deploy"){
             steps{
