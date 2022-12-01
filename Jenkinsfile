@@ -20,9 +20,9 @@ pipeline {
             }
         }
         
-      /*  try {
+      
             
-        stage("publish"){
+       /*   stage("publish"){
 
             steps{
                 rtUpload (
@@ -36,12 +36,9 @@ pipeline {
                         ]
                     }''',
                 )
+             }
             }
-            }
-            catch (err) {
-                printIn "unable to push the artifact"
-                printIn err.getMessage()
-            } */
+            */
         }
 
         stage("deploy"){
