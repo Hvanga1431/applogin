@@ -37,8 +37,9 @@ pipeline {
                     }''',
                 )
             }
-            catch(err) {
-                printIn "ünable to push the artifact"
+            }
+            catch (err) {
+                printIn "unable to push the artifact"
                 printIn err.getMessage()
             }
         }
