@@ -21,9 +21,8 @@ pipeline {
         }
         
       
-            
+        {    
        /*   stage("publish"){
-
             steps{
                 rtUpload (
                     serverId: "myjfrog",
@@ -45,7 +44,8 @@ pipeline {
             steps{
                 sh "ansible-playbook -i /home/devops/ansible1/tom_host  /home/devops/ansible1/cd.yml"
             }
+    
         }
-        
     }
-}  
+        
+}
