@@ -1,5 +1,5 @@
 pipeline {
-    agent {label "H555"}
+    agent {label "slave555"}
 
     stages{
         stage("git clone"){
