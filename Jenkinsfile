@@ -41,7 +41,7 @@ pipeline {
 
         stage("deploy"){
             steps{
-                sh "ansible-playbook -i /home/devops/ansible1/tom_host  /home/devops/ansible1/end.yml"
+                sh "ansible-playbook -i /home/devops/ansible1/end.yml"
             }
     
         }
